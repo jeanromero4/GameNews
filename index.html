@@ -7,48 +7,97 @@
     <title>Figma</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
-   
 </head>
+
 <body class="m-0 w-full min-h-screen bg-[url('img/fondo.png')] bg-cover bg-center bg-no-repeat">
 
-    <img
-        src="img/logo.png"
-        class="absolute top-4 left-4 w-32 h-auto"
-    >
-
-  <div class="absolute top-4 right-4 flex items-center gap-2">
-    <img src="img/lupa.png" class="w-[4rem] h-auto">
-
-    <a href="login.html">
-    <img src="img/agrerarusuario.png" class="w-[4rem] h-auto cursor-pointer">
+    <a href="#main"
+       class="absolute -top-20 left-4 z-50 bg-white text-black p-3 rounded focus:top-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4">
+        Saltar al contenido principal
     </a>
 
-    <img src="img/desplegable.png" class="w-[4rem] h-auto">
-</div>
-        
+    <header>
+        <img
+            src="img/logo.png"
+            alt="Logo de Figma"
+            class="absolute top-4 left-4 w-32 h-auto">
 
-<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[75rem] max-w-full grid grid-cols-2 gap-1 p-0">
+        <nav aria-label="Navegación principal"
+             class="absolute top-4 right-4 flex items-center gap-2">
 
-    <div class="translate-y-8">
-        <img src="img/Rectangle1.png" class="w-full h-auto block">
-    </div>
+            <a href="#" aria-label="Buscar"
+               class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4">
+                <img src="img/lupa.png"
+                     alt=""
+                     class="w-[4rem] h-auto">
+            </a>
 
-    <div class="translate-y-8">
-        <img src="img/Rectangle2.png" class="w-full h-auto block">
-    </div>
+            <a href="login.html" aria-label="Agregar usuario"
+               class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4">
+                <img src="img/agrerarusuario.png"
+                     alt=""
+                     class="w-[4rem] h-auto">
+            </a>
 
-    <div>
-        <img src="img/Rectangle3.png" class="w-full h-auto block">
-    </div>
+            <button type="button"
+                    aria-label="Abrir menú desplegable"
+                    class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4">
+                <img src="img/desplegable.png"
+                     alt=""
+                     class="w-[4rem] h-auto">
+            </button>
 
-    <div>
-        <img src="img/Rectangle4.png" class="w-full h-auto block">
-    </div>
+        </nav>
+    </header>
 
-</div>
+    <main id="main" tabindex="-1">
 
-</div>
+        <section aria-label="Contenido principal">
+
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[75rem] max-w-full grid grid-cols-2 gap-1 p-0">
+
+                <div>
+                    <img
+                        src="img/Rectangle1.png"
+                        alt="Imagen de contenido 1"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-auto block">
+                </div>
+
+                <div>
+                    <img
+                        src="img/Rectangle2.png"
+                        alt="Imagen de contenido 2"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-auto block">
+                </div>
+
+                <div>
+                    <img
+                        src="img/Rectangle3.png"
+                        alt="Imagen de contenido 3"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-auto block">
+                </div>
+
+                <div>
+                    <img
+                        src="img/Rectangle4.png"
+                        alt="Imagen de contenido 4"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full h-auto block">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
+
